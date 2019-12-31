@@ -53,11 +53,11 @@ and install  `fable-easymde` from NuGet
 #### Get Value
 
     let mdeInstance: EasyMDE = easyMDE.Create()
-    let value: string = mdeInstance.value
+    let value: string = mdeInstance.value()
 
 #### OnChange event
 
-> Note: Currently there's no bindings provided for Code Mirror which is used by EasyMDE. So you have to typecast `mdeInstance.codemirror` as dynamic object to access it's members.
+> Note: Currently there are no bindings provided for CodeMirror which is used by EasyMDE. So you have to typecast `mdeInstance.codemirror` as dynamic object to access it's members.
 
     mdeInstance.codemirror?on ("change", fun () -> Console.WriteLine(mdeInstance.value())))
 
