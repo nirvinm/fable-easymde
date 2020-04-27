@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>Fable.EasyMDE</PackageId>
+    <Title>Fable bindings for Easy Markdown Editor</Title>
+    <Description>Fable - F# bindings for the open source Easy Markdown Editor (https://easymde.tk) generated using ts2fable.</Description>
+    <Version>1.0.0-alpha-1</Version>
+    <Authors>Nirvin M</Authors>
+    <RepositoryUrl>https://github.com/nirvinm/fable-easymde</RepositoryUrl>
+    <RepositoryBranch>master</RepositoryBranch>
+    <PackageTags>fable;f#;javascript;js;easymde;markdown</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="EasyMDE.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="3.1.5" />
+    <PackageReference Include="Fable.Browser.Dom" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
