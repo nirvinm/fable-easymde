@@ -3,9 +3,10 @@
   <PropertyGroup>
     <PackageId>Fable.EasyMDE</PackageId>
     <Title>Fable bindings for Easy Markdown Editor</Title>
-    <Description>Fable - F# bindings for the open source Easy Markdown Editor (https://easymde.tk) generated using ts2fable.</Description>
-    <Version>1.0.0-alpha-1</Version>
+    <Description>Fable/F# bindings for the open source Easy Markdown Editor (https://easymde.tk) generated using ts2fable.</Description>
+    <Version>1.0.0-beta</Version>
     <Authors>Nirvin M</Authors>
+    <PackageProjectUrl>https://github.com/nirvinm/fable-easymde</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nirvinm/fable-easymde</RepositoryUrl>
     <RepositoryBranch>master</RepositoryBranch>
     <PackageTags>fable;f#;javascript;js;easymde;markdown</PackageTags>
@@ -15,6 +16,11 @@
 
   <ItemGroup>
     <Compile Include="EasyMDE.fs" />
+  </ItemGroup>
+
+  <!-- Add source files to "fable" folder in Nuget package -->
+  <ItemGroup>
+    <Content Include="*.fsproj; **\*.fs; **\*.fsi" PackagePath="fable\" />
   </ItemGroup>
 
   <ItemGroup>
